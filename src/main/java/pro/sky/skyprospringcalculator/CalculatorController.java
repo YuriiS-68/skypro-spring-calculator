@@ -53,9 +53,6 @@ public class CalculatorController {
         if (number1 == null || number2 == null){
             return "One of parameters is not specified.";
         }
-        if (number2 == 0){
-            return "Invalid parameter value " + number2;
-        }
         return "The result of an divide expression: " + number1 + " / " + number2 + " = "
                 + calculatorService.getDivide(number1, number2);
     }
